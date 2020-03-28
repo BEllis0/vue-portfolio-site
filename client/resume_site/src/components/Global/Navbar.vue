@@ -30,6 +30,8 @@ export default {
         justify-content: flex-end;
         padding-right: 30px;
         font-size: 20px;
+        margin-top: 0px;
+        padding: 5px;
     }
 
     .nav-item {
