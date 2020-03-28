@@ -27,10 +27,13 @@ export default {
     .nav-list {
         display: flex;
         list-style-type: none;
-        justify-content: space-around;
+        justify-content: flex-end;
+        padding-right: 30px;
+        font-size: 20px;
     }
 
     .nav-item {
         color: #7aa3c1;
+        margin: 0px 10px;
     }
 </style>

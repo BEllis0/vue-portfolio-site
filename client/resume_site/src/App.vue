@@ -1,18 +1,22 @@
 <template>
   <div id="app">
     <HomeBanner />
+    <HomeBio />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HomeBanner from './components/HomeBanner.vue';
-
-
+import HomeBanner from './components/Home/HomeBanner.vue';
+import HomeBio from './components/Home/HomeBio.vue';
+import Footer from './components/Global/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    HomeBanner
+    HomeBanner,
+    HomeBio,
+    Footer,
   },
   data() {
     return {
@@ -31,8 +35,4 @@ export default {
   color: #2c3e50;
 }
 
-.banner-img {
-  width: 100%;
-  max-width: 100%;
-}
 </style>
