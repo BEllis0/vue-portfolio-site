@@ -2,12 +2,18 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 
+//routes import
+const routes = require('./routes');
+
 const app = express();
 
 // ==== middleware
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
+
+//routes
+app.use('/api', routes);
 
 const PORT = process.env.PORT || 5000;
 
