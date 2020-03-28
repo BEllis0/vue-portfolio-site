@@ -10,7 +10,6 @@
 import HomeBanner from './components/Home/HomeBanner.vue';
 import HomeBio from './components/Home/HomeBio.vue';
 import Footer from './components/Global/Footer.vue';
-
 export default {
   name: 'App',
   components: {
@@ -34,5 +33,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>
