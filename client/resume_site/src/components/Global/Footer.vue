@@ -38,13 +38,14 @@ export default {
     .footer-list {
         list-style-type: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: 0px;
         padding: 16px 5px;
     }
 
     .footer-item {
         color: rgb(38,133,230);
+        margin: 0px 15px;
     }
 
     .footer-copyright-section {
