@@ -1,35 +1,22 @@
 <template>
   <div id="app">
+    <HomeBanner />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import HomeBanner from './components/HomeBanner.vue';
+
+
 
 export default {
   name: 'App',
   components: {
-
+    HomeBanner
   },
   data() {
     return {
-      todos: [
-        {
-          id: 1,
-          title: "Todo 1",
-          completed: false
-        },
-        {
-          id: 2,
-          title: "Todo 2",
-          completed: true
-        },
-        {
-          id: 3,
-          title: "Todo 3",
-          completed: false
-        },
-      ]
+      
     }
   }
 }
@@ -42,5 +29,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 100%;
 }
 </style>
