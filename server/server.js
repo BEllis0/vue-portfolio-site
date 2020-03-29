@@ -2,6 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 
+require('dotenv').config();
+
 //routes import
 const routes = require('./routes');
 
