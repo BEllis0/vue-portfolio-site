@@ -1,11 +1,13 @@
 <template>
     <div class="banner">
         <Navbar />
-        <h1 class="name">Brandon Ellis</h1>
-        <h3>const { frontend, backend, fullStack } = require('web_developer')</h3>
-        <div>
-            <button class="resumebtn">Resume</button>
-            <button class="inquirebtn">Inquire</button>
+        <div class="title-container">
+            <h1 class="name">Brandon Ellis</h1>
+            <h3>const { frontend, backend, fullStack } = require('web_developer')</h3>
+            <div>
+                <button class="resumebtn">Resume</button>
+                <button class="inquirebtn">Inquire</button>
+            </div>
         </div>
     </div>
 </template>
@@ -28,16 +30,24 @@ export default {
             url("https://res.cloudinary.com/btdigital/image/upload/v1574379949/Malaysia-towers-abstract-color-2_lxpqeb.png");
         background-size: 100vw;
         background-repeat: no-repeat;
+        background-position: center;
         width: 100%;
         max-width: 100%;
         height: 700px;
+    }
+
+    .title-container {
+        margin-top: 10%;
+        color: white;
+        text-align: center;
     }
 
     button {
         padding: 20px;
         font-size: 16px;
         border-radius: 50px 50px;
-        margin: 0px 5px;
+        margin: 5px 5px;
+        font-weight: 650;
     }
 
     .resumebtn {
