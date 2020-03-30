@@ -22,9 +22,45 @@ export default {
 </script>
 
 <style>
+
+  html, body, #app {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Flex  */
+  .flex {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  /* text colors */
+  .grey-text {
+    color: rgb(150,152,150);
+  }
+
+  .light-blue-text {
+    color: #7aa3c1;
+  }
+
+  /* Main content sections */
+  .main-page-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  /* Section containers */
+  .module {
+    width: 100%;
   }
 </style>
