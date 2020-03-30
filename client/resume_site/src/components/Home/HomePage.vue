@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="homePage">
         <HomeBanner />
         <HomeBio />
         <Footer />
