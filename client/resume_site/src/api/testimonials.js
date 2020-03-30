@@ -14,13 +14,13 @@ class TestimonialsApi {
             });
     }
 
-    static postTestimonial(profile) {
+    static postTestimonial(testimonial) {
         return fetch(`${testimonialUrl}/new`, {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
             },
-            body: JSON.stringify(profile)
+            body: JSON.stringify(testimonial)
         })
             .then(response => {
                 return response.json();
