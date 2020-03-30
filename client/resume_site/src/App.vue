@@ -6,7 +6,7 @@
 
 <script>
 import HomePage from './components/Home/HomePage.vue';
-
+import ProfileApi from './api/profile.js';
 
 export default {
   name: 'App',
@@ -15,7 +15,15 @@ export default {
   },
   data() {
     return {
-      
+      profile: [],
+      error: ''
+    }
+  },
+  async created() {
+    try {
+      this.profile = await ProfileApi.postProfile({test: "something"});
+    } catch(err) {
+      this.error = err;
     }
   }
 }

@@ -34,6 +34,7 @@ export default {
         max-width: 100%;
         height: auto;
         padding: 40px 0px;
+        /* padding-bottom: 80px; */
     }
 
     .title-container {
@@ -47,7 +48,7 @@ export default {
         padding: 10px;
         font-size: 16px;
         border-radius: 50px 50px;
-        margin: 5px 5px;
+        margin: 15px 5px;
         font-weight: 650;
     }
 
@@ -66,33 +67,82 @@ export default {
     }
 
     .public-tag {
-        display: initial;
-        animation-name: public-tag-change;
-        animation-duration: 5000ms;
+        animation-name: publicTagChange;
+        animation-duration: 7s;
         animation-timing-function: ease-in;
         animation-iteration-count: infinite;
-        /* animation: public-tag-change 5s ease-in 1s infinite normal forwards; */
     }
 
     .developer-tag {
-        display: none;
-        /* animation: developer-tag-change 5s ease-in 1s infinite normal forwards; */
+        opacity: 0;
+        animation-name: developerTagChange;
+        animation-duration: 7s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        position: relative;
+        top: -23px;
     }
 
-    @keyframes public-tag-change {
+    /* ANIMATIONS */
+
+    @keyframes publicTagChange {
+        0% {
+            opacity: 1;
+            transform: initial;
+        }
+        35% {
+            opacity: 1;
+            transform: initial;
+        }
+        40% {
+            transform: translateY(25%);
+            opacity: 0;
+        }
         50% {
-            display: none;
-            visibility: hidden;
+            opacity: 0;
         }
         75% {
-            display: initial;
-            visibility: initial;
+            opacity: 0;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
         }
     }
 
-    /* @keyframes developer-tag-change {
+     @keyframes developerTagChange {
+        0% {
+           opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        45% {
+           opacity: 1;
+           transform: initial;
+        }
+        75% {
+           opacity: 1;
+           transform: initial;
+        }
+        78% {
+            transform: translateY(25%);
+        }
+        80% {
+            opacity: 0;
+        }
+        85% {
+            opacity: 0;
+            
+        }
+        100% {
+            opacity: 0;
+        }
+    }
 
-    } */
+    /* MEDIA QUERIES */
 
     @media screen and (max-width: 1382px) and (min-width: 500px) {
 
