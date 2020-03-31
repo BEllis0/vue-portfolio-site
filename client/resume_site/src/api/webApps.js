@@ -1,4 +1,4 @@
-const webAppsUrl = 'http://localhost:5000/api/web-applications';
+const webAppsUrl = '/api/web-applications';
 
 class WebAppsApi {
     static getWebApps() {

@@ -1,4 +1,4 @@
-const testimonialUrl = 'http://localhost:5000/api/testimonials';
+const testimonialUrl = '/api/testimonials';
 
 class TestimonialsApi {
     static getTestimonials() {

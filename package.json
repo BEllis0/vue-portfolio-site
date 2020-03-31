@@ -13,12 +13,12 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "vuetify": "^2.2.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2",
-    "sass": "^1.19.0",
-    "sass-loader": "^8.0.0"
+    "http-proxy-middleware": "^1.0.3",
+    "nodemon": "^2.0.2"
   },
   "bugs": {
     "url": "https://github.com/BEllis0/vue-portfolio-site/issues"

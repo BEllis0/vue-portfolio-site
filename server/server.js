@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-
+const { createProxyMiddleware } = require('http-proxy-middleware');
 require('dotenv').config();
 
 //routes import
@@ -13,6 +13,12 @@ const app = express();
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
+
+// === proxy
+// app.use('/api/profiles/*', createProxyMiddleware({
+//     target: 'http://localhost:5000',
+//     changeOrigin: true,
+// }));
 
 //routes
 app.use('/api', routes);
