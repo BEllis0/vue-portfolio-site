@@ -1,5 +1,5 @@
 
-const profileUrl = 'http://localhost:5000/api/profiles';
+const profileUrl = '/api/profiles';
 
 class ProfileApi {
     static getProfile(id) {

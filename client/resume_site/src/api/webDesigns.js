@@ -1,4 +1,4 @@
-const webDesignUrl = 'http://localhost:5000/api/web-applications';
+const webDesignUrl = '/api/web-applications';
 
 class WebDesignsApi {
     static getWebDesigns() {
