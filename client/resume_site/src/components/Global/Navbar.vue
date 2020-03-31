@@ -73,7 +73,7 @@ export default {
 
         .nav-list {
             justify-content: center;
-            font-size: 14px;
+            font-size: 16px;
             padding-right: 0px; 
         }
 
