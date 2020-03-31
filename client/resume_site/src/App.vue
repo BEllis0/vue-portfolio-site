@@ -21,7 +21,7 @@ export default {
   },
   async created() {
     try {
-      this.profile = await ProfileApi.postProfile({test: "something"});
+      this.profile = await ProfileApi.getProfile(process.env.PROFILE_ID);
     } catch(err) {
       this.error = err;
     }
@@ -38,6 +38,7 @@ export default {
   }
 
   #app {
+    background-color: black;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -45,21 +46,32 @@ export default {
     flex-direction: column;
   }
 
-  /* Flex  */
+  /* ====== Helper styles ======  */
   .flex {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: row ;
     flex-wrap: wrap;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .block {
+    display: block;
   }
 
   /* text colors */
   .grey-text {
-    color: rgb(150,152,150);
+    color: rgb(204, 204, 204);
+    margin: 2px 0px;
   }
 
   .light-blue-text {
     color: #7aa3c1;
   }
+
+  /* ===== container styles ===== */
 
   /* Main content sections */
   .main-page-container {
@@ -70,5 +82,23 @@ export default {
   /* Section containers */
   .module {
     width: 100%;
+    padding: 20px 0px;
+    background-color: black;
+  }
+
+
+  /* ===== global responsive designs ===== */
+
+  @media (max-width: 500px) {
+    .flex {
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-page-container {
+      width: 100%;
+    }
+
   }
 </style>
