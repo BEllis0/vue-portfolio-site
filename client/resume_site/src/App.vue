@@ -71,6 +71,10 @@ export default {
     color: #7aa3c1;
   }
 
+  a {
+      color: #7aa3c1;
+  }
+
   /* ===== container styles ===== */
 
   /* Main content sections */
