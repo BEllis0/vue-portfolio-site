@@ -61,6 +61,10 @@ export default {
     display: block;
   }
 
+  .remove-margin {
+    margin: 0px;
+  }
+
   /* text colors */
   .grey-text {
     color: rgb(204, 204, 204);
