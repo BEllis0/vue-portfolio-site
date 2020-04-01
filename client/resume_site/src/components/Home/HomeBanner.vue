@@ -9,15 +9,17 @@
                 <button class="inquirebtn">Inquire</button>
             </div>
         </div>
+        <BrandonShamelessPlug />
     </div>
 </template>
 
 <script>
+import BrandonShamelessPlug from '../Global/BrandonShamelessPlug.vue';
 
 export default {
     name: "HomeBanner",
     components: {
-        
+        BrandonShamelessPlug
     }
 }
 </script>

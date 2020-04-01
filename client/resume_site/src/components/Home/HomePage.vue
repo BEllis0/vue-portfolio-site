@@ -3,6 +3,7 @@
         <HomeBanner />
         <HomeBio />
         <HomeProjects />
+        <HomeClients />
         <Footer />
     </div>
 </template>
@@ -12,6 +13,7 @@ import HomeBanner from './HomeBanner';
 import HomeBio from './HomeBio';
 import Footer from '../Global/Footer.vue';
 import HomeProjects from './HomeProjects.vue';
+import HomeClients from './HomeClients.vue';
 
 export default {
     name: "HomePage",
@@ -19,6 +21,7 @@ export default {
         HomeBanner,
         HomeBio,
         HomeProjects,
+        HomeClients,
         Footer
     }
 }
