@@ -1,7 +1,7 @@
 <template>
     <div class="module">
         <div class="main-page-container">
-            <h2 class="light-blue-text">TESTIMONIALS</h2>
+            <h2 class="light-blue-text section-title">TESTIMONIALS</h2>
             <HomeTestimonialsItems />
         </div>
     </div>
