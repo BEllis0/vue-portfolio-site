@@ -26,4 +26,15 @@ export default {
     .clientImg {
         width: 50%;
     }
+
+    @media (max-width: 500px) {
+        
+        .main-page-container, .flex, .module {
+            width: 100%;
+        }
+
+        .clientImg {
+            width: 80%;
+        }
+    }
 </style>

@@ -133,4 +133,14 @@ export default {
         left: 0;
         right: 0;
     }
+
+    @media (max-width: 500px) {
+        .flex {
+            flex-direction: column;
+        }
+
+        .project-item {
+            width: 70%;
+        }
+    }
 </style>

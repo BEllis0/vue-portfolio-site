@@ -161,4 +161,18 @@ export default {
             font-size: 14px;
         }
     }
+
+    @media (max-width: 500px) {
+        .title-container {
+            margin-top: 0px;
+        }
+
+        .banner {
+            padding-top: 0px;
+        }
+
+        .developer-tag, .public-tag {
+            margin: 0px;
+        }
+    }
 </style>
