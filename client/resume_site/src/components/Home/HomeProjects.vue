@@ -1,7 +1,7 @@
 <template>
     <div class="module">
         <div class="main-page-container">
-            <h2 class="light-blue-text h2">PROJECTS & SAMPLES</h2>
+            <h2 class="light-blue-text h2 section-title">PROJECTS & SAMPLES</h2>
             <div class="flex project-list">
                 <a class="project-item blurb-blue" href="">
                     <div>
