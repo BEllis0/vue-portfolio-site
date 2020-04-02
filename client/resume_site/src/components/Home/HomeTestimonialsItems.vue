@@ -77,4 +77,30 @@ export default {
         text-align: justify;
     }
 
+    @media (max-width: 500px) {
+        .testimonial {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .flex {
+            flex-direction: column;
+        }
+
+        .testimonial-body {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1073px) {
+        .testimonial-img-section {
+            width: 30%;
+        }
+
+        .testimonial-body {
+            width: 70%;
+        }
+    }
+
 </style>
