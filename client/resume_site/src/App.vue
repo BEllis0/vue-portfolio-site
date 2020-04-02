@@ -108,5 +108,13 @@ export default {
       width: 100%;
     }
 
+    .module {
+      padding: 30px 0px;
+    }
+
+    .section-title {
+      padding-left: 20px !important;
+    }
+
   }
 </style>
