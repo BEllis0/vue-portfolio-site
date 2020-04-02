@@ -4,6 +4,7 @@
         <HomeBio />
         <HomeProjects />
         <HomeClients />
+        <HomeTestimonials />
         <Footer />
     </div>
 </template>
@@ -14,6 +15,7 @@ import HomeBio from './HomeBio';
 import Footer from '../Global/Footer.vue';
 import HomeProjects from './HomeProjects.vue';
 import HomeClients from './HomeClients.vue';
+import HomeTestimonials from './HomeTestimonials.vue';
 
 export default {
     name: "HomePage",
@@ -22,6 +24,7 @@ export default {
         HomeBio,
         HomeProjects,
         HomeClients,
+        HomeTestimonials,
         Footer
     }
 }

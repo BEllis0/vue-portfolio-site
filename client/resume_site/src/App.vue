@@ -61,6 +61,10 @@ export default {
     display: block;
   }
 
+  .remove-margin {
+    margin: 0px;
+  }
+
   /* text colors */
   .grey-text {
     color: rgb(204, 204, 204);
@@ -102,6 +106,14 @@ export default {
 
     .main-page-container {
       width: 100%;
+    }
+
+    .module {
+      padding: 30px 0px;
+    }
+
+    .section-title {
+      padding-left: 20px !important;
     }
 
   }
