@@ -1,17 +1,18 @@
 <template>
-  <div id="app">
-    <HomePage />
-  </div>
+    <v-app id="app">
+    <router-view></router-view>
+    <!-- <HomePage /> -->
+    </v-app>
 </template>
 
 <script>
-import HomePage from './components/Home/HomePage.vue';
+// import HomePage from './components/Home/HomePage.vue';
 import ProfileApi from './api/profile.js';
 
 export default {
   name: 'App',
   components: {
-    HomePage,
+    // HomePage,
   },
   data() {
     return {
