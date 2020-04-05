@@ -2,7 +2,7 @@
     <div class="module">
         <div class="main-page-container">
             <Navbar />
-            <div class="flex">
+            <div id="about" class="flex">
                 <div class="bio-left">
                     <div class="profile-left">
                     <img class="headshot-img" alt="Headshot of Brandon Ellis" src="http://www.brandontellis.com/wp-content/uploads/2019/11/26017635.jpeg" />
