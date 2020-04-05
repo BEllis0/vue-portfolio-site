@@ -1,5 +1,8 @@
 <template>
     <div class="social-icons">
+        <a href="https://github.com/BEllis0" target="_blank">
+            <img class="github icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-circle-512.png" />
+        </a>
         <a href="https://www.linkedin.com/in/brandon-t-ellis" target="_blank">
             <img class="linkedin icon" src="https://image.flaticon.com/icons/svg/145/145807.svg" />
         </a>
@@ -26,7 +29,7 @@ export default {
         margin: 0px 2px;
     }
 
-    .facebook, .linkedin, .twitter, .youtube {
+    .facebook, .linkedin, .twitter, .youtube, .github {
         width: 25px;
         height: 25px;
     }
