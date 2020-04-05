@@ -1,9 +1,9 @@
 <template>
     <div class="module">
         <div class="main-page-container">
-            <h2 class="light-blue-text">CONTACT</h2>
             <div class="flex">
                 <div class="left">
+                    <h2 class="light-blue-text">CONTACT</h2>
                     <h4 class="remove-margin">Brandon T. Ellis</h4>
                     <p class="remove-margin">Web Development | Digital Marketing</p>
                     <p class="remove-margin">brandonellis.email@gmail.com</p>
@@ -11,8 +11,8 @@
                     <SocialIcons />
                 </div>
                 <div class="right">
-                    <p>If you want to collaborate on designing a beautiful website, crafting effective content, or improving web conversions, feel free to reach out.</p>
                     <p>I am available for freelance projects and employment.</p>
+                    <p>If you want to collaborate on designing a beautiful and effective website, or you're looking to add a creative problem solver to your development team, please reach out! feel free to reach out.</p>
                 </div>
             </div>
         </div>
@@ -33,6 +33,10 @@ export default {
 <style scoped>
     .module {
         background-color: rgb(232,233,232);
+    }
+
+    .flex {
+        align-items: center;
     }
 
     .left {
