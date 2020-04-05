@@ -8,21 +8,48 @@
                 <a target="_blank" href="https://res.cloudinary.com/btdigital/image/upload/v1585928267/resume/Brandon_Ellis_-_Resume_-_4-1-20.pdf">
                     <button class="resumebtn">Resume</button>
                 </a>
-                <button class="inquirebtn">Inquire</button>
+                <button class="inquirebtn" @click="overlay = !overlay" >Inquire</button>
             </div>
         </div>
         <BrandonShamelessPlug />
+        
+        <!-- Show on contact click -->
+        <v-overlay :absolute="absolute" :value="overlay">
+            <div class="contact-overlay">
+                <div class="contact-info-section">
+                    <h3 class="remove-margin">Brandon Ellis</h3>
+                    <p class="remove-margin">Web Development | Digital Marketing</p>
+                    <a href="mailto:brandonellis.email@gmail.com?subject=Website Inquery" target="_blank">
+                        <p class="remove-margin">brandonellis.email@gmail.com</p>
+                    </a>
+
+                    <p class="remove-margin">+1 (518) 354-3096</p>
+                    <SocialIcons />
+                    <p class="remove-margin">I am available for freelance projects and employment.</p>
+                    <p>If you want to collaborate on designing a beautiful and effective website, or you're looking to add a creative problem solver to your development team, please reach out! feel free to reach out.</p>
+                </div>
+                <v-btn color="#7aa3c1" class="hide-contact" @click="overlay = false">
+                    Hide Contact Info
+                </v-btn>
+            </div>
+        </v-overlay>
     </div>
 </template>
 
 <script>
 import BrandonShamelessPlug from '../Global/BrandonShamelessPlug.vue';
+import SocialIcons from '../Global/SocialIcons.vue';
 
 export default {
     name: "HomeBanner",
     components: {
-        BrandonShamelessPlug
-    }
+        BrandonShamelessPlug,
+        SocialIcons
+    },
+    data: () => ({
+        absolute: true,
+        overlay: false
+    })
 }
 </script>
 

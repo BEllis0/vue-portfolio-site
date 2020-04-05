@@ -1,18 +1,16 @@
 <template>
     <v-app id="app">
     <router-view></router-view>
-    <!-- <HomePage /> -->
     </v-app>
 </template>
 
 <script>
-// import HomePage from './components/Home/HomePage.vue';
 import ProfileApi from './api/profile.js';
 
 export default {
   name: 'App',
   components: {
-    // HomePage,
+
   },
   data() {
     return {
@@ -66,6 +64,10 @@ export default {
     margin: 0px;
   }
 
+  .right-align {
+    text-align: right;
+  }
+
   /* text colors */
   .grey-text {
     color: rgb(204, 204, 204);
@@ -95,6 +97,32 @@ export default {
     background-color: black;
   }
 
+  /* ==== Contact Info Overlay ==== */
+  .contact-overlay {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      color: black;
+      width: 500px;
+      height: auto;
+      border-radius: 10px;
+      margin: 0 auto;
+      -moz-box-shadow:    inset 0 0 10px #000000;
+      -webkit-box-shadow: inset 0 0 10px #000000;
+      box-shadow:         inset -8px -8px 0 #7aa3c1;
+  }
+
+  .contact-info-section {
+      width: 90%;
+      margin: 0 auto;
+      padding: 5px;
+  }
+
+  .hide-contact {
+      background-color: #7aa3c1;
+      margin: 0 auto !important;
+      border-radius: 8px 8px 0 0 !important;
+  }
 
   /* ===== global responsive designs ===== */
 
@@ -115,6 +143,10 @@ export default {
 
     .section-title {
       padding-left: 20px !important;
+    }
+
+    .contact-overlay {
+      width: 90%;
     }
 
   }

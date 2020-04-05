@@ -1,63 +1,111 @@
 <template>
     <div class="navbar">
         <nav>
+
+            <!-- ===== DESKTOP MENU ===== -->
+
             <ul class="nav-list desktop">
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Resume</li>
+                <!-- Home -->
+                <router-link to="/"><li class="nav-item">Home</li></router-link>
+                <!-- Resume on Cloudinary -->
+                <a href="https://res.cloudinary.com/btdigital/image/upload/v1585928267/resume/Brandon_Ellis_-_Resume_-_4-1-20.pdf" target="_blank">
+                    <li class="nav-item">Resume</li>
+                </a>
+                <!-- About section on home page -->
                 <router-link to="#about"><li class="nav-item">About</li></router-link>
-                <li class="nav-item">Projects & Samples</li>
+                <!-- Dropdown menu for projects -->
+                <v-menu transition="slide-y-transition" bottom>
+                    <template v-slot:activator="{ on }">
+                        <li v-on="on" class="nav-item">Projects & Samples</li>
+                    </template>
+                    <v-list>
+                        <v-list-item :to="item.link" v-for="(item, i) in items" :key="i">
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        </v-list-item>
+                    </v-list>
+                </v-menu>
                 <li @click="overlay = !overlay" class="nav-item">Contact</li>
-                
-                
             </ul>
+            
+            <!-- ===== MOBILE/TABLET MENU ===== -->
+
             <ul class="nav-list mobile-tablet">
                 <div>
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Resume</li>
-                <li class="nav-item">About</li>
+                <!-- Home -->
+                <router-link to="/"><li class="nav-item">Home</li></router-link>
+                <!-- Resume on Cloudinary -->
+                <a href="https://res.cloudinary.com/btdigital/image/upload/v1585928267/resume/Brandon_Ellis_-_Resume_-_4-1-20.pdf" target="_blank">
+                    <li class="nav-item">Resume</li>
+                </a>
+                <!-- About section on home page -->
+                <router-link to="#about"><li class="nav-item">About</li></router-link>
                 </div>
                 <div>
-                <li class="nav-item">Projects & Samples</li>
+                <!-- Dropdown menu for projects -->
+                <v-menu transition="slide-y-transition" bottom>
+                    <template v-slot:activator="{ on }">
+                        <li v-on="on" class="nav-item">Projects & Samples</li>
+                    </template>
+                    <v-list>
+                        <v-list-item v-for="(item, i) in items" :key="i">
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        </v-list-item>
+                    </v-list>
+                </v-menu>
+                
                 <li @click="overlay = !overlay" class="nav-item">Contact</li>
                 </div>
             </ul>
 
-            <!-- Show on contact click -->
-                <v-overlay :absolute="absolute" :value="overlay">
-                    <div class="contact-overlay">
-                        <div class="contact-info-section">
-                            <h3 class="remove-margin">Brandon Ellis</h3>
-                            <p class="remove-margin">Web Development | Digital Marketing</p>
-                            <a href="mailto:brandonellis.email@gmail.com?subject=Website Inquery" target="_blank">
-                                <p class="remove-margin">brandonellis.email@gmail.com</p>
-                            </a>
+            <!-- ===== CONTACT OVERLAY ===== -->
 
-                            <p class="remove-margin">+1 (518) 354-3096</p>
-                            <SocialIcons />
-                            <p class="remove-margin">I am available for freelance projects and employment.</p>
-                            <p>If you want to collaborate on designing a beautiful and effective website, or you're looking to add a creative problem solver to your development team, please reach out! feel free to reach out.</p>
-                        </div>
-                        <v-btn color="#7aa3c1" class="hide-contact" @click="overlay = false">
-                            Hide Contact Info
-                        </v-btn>
+            <!-- <ContactOverlay
+                absolute=true,
+                overlay=false
+             /> -->
+            <v-overlay :absolute="absolute" :value="overlay">
+                <div class="contact-overlay">
+                    <div class="contact-info-section">
+                        <h3 class="remove-margin">Brandon Ellis</h3>
+                        <p class="remove-margin">Web Development | Digital Marketing</p>
+                        <a href="mailto:brandonellis.email@gmail.com?subject=Website Inquery" target="_blank">
+                            <p class="remove-margin">brandonellis.email@gmail.com</p>
+                        </a>
+
+                        <p class="remove-margin">+1 (518) 354-3096</p>
+                        <SocialIcons />
+                        <p class="remove-margin">I am available for freelance projects and employment.</p>
+                        <p>If you want to collaborate on designing a beautiful and effective website, or you're looking to add a creative problem solver to your development team, please reach out! feel free to reach out.</p>
+                        <p class="remove-margin right-align">Built with <a href="https://vuejs.org/" target="_blank">Vue.js</a></p>
+                        <p class="remove-margin right-align">View the code on <a href="https://github.com/BEllis0/vue-portfolio-site" target="_blank">Github</a></p>
                     </div>
-                </v-overlay>
+                    <v-btn color="#7aa3c1" class="hide-contact" @click="overlay = false">
+                        Hide Contact Info
+                    </v-btn>
+                </div>
+            </v-overlay>
         </nav>
     </div>
 </template>
 
 <script>
 import SocialIcons from './SocialIcons.vue';
-
+// import ContactOverlay from './ContactOverlay.vue';
 
 export default {
     name: "Navbar",
     components: {
         SocialIcons
+        // ContactOverlay
     },
     data: () => ({
         absolute: true,
-        overlay: false
+        overlay: false,
+        items: [
+            { title: 'Web Design', link: '/web-apps' },
+            { title: 'Web Applications', link: '/web-apps' },
+            { title: 'Data Visualization', link: '/web-apps' },
+        ]
     })
 }
 </script>
@@ -101,33 +149,6 @@ export default {
         margin: 0px 10px;
     }
 
-    .contact-overlay {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        color: black;
-        width: 500px;
-        height: auto;
-        border-radius: 10px;
-        margin: 0 auto;
-        -moz-box-shadow:    inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow:         inset -8px -8px 0 #7aa3c1;
-    }
-
-    .contact-info-section {
-        width: 90%;
-        /* text-align: center; */
-        margin: 0 auto;
-        padding: 5px;
-    }
-
-    .hide-contact {
-        background-color: #7aa3c1;
-        margin: 0 auto;
-        border-radius: 8px 8px 0 0;
-    }
-
     @media screen and (max-width: 850px) {
         .navbar {
             padding: 10px 0px;
@@ -147,12 +168,6 @@ export default {
         .desktop {
             visibility: hidden;
             display: none;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .contact-overlay {
-            width: 90%;
         }
     }
 </style>
