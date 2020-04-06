@@ -2,7 +2,7 @@
     <div class="webAppsPage">
         <div class="nav-section">
             <div class="header flex">
-                <h1>Projects & Samples</h1>
+                <h1 class="page-title">Projects & Samples</h1>
                 <div class="navbar-section">
                     <Navbar />
                 </div>
@@ -60,6 +60,7 @@ export default {
 
     .webAppsPage {
         background-color: white;
+        width: 100vw;
     }
 
     .webAppsSidebar {
@@ -86,8 +87,23 @@ export default {
             position: static;
         }
 
+        .nav-section {
+            position: static;
+            padding: 0px;
+            justify-content: center;
+        }
+
         .flex {
             display: block;
         }
+
+        .body {
+            top: 0px;
+        }
+
+        .page-title {
+            margin-bottom: 0px;
+            font-size: 22px;
+    }
     }
 </style>
