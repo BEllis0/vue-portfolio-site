@@ -46,9 +46,17 @@ export default {
   }
 
   /* ====== Helper styles ======  */
+
+  /* Variables */
+  * {
+    --light-blue: #7aa3c1;
+    --grey: rgb(204, 204, 204);
+  }
+  
+
   .flex {
     display: flex !important;
-    flex-direction: row ;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
@@ -123,6 +131,11 @@ export default {
       margin: 0 auto !important;
       border-radius: 8px 8px 0 0 !important;
   }
+
+  /* ===== Specific Pages ===== */
+
+  /* Web Applications */
+
 
   /* ===== global responsive designs ===== */
 
