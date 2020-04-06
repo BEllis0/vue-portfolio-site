@@ -1,10 +1,8 @@
 <template>
-    <div class="main">
+    <div>
+        <div class="main">
         <AppsList />
-        <div class="test"></div>
-        <div class="test"></div>
-        <div class="test"></div>
-        <div class="test"></div>
+        </div>
     </div>
 </template>
 
@@ -23,5 +21,9 @@ export default {
     .test {
         width: 50%;
         height: 600px;
+    }
+
+    .main {
+        padding: 5px 50px 5px 0px;
     }
 </style>
