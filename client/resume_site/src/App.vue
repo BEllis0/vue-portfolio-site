@@ -87,7 +87,8 @@ export default {
   }
 
   a {
-      color: #7aa3c1;
+      color: #7aa3c1 !important;
+      text-decoration: none !important;
   }
 
   /* ===== container styles ===== */

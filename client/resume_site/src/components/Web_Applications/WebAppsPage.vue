@@ -12,7 +12,7 @@
             <AppsSidebar class="webAppsSidebar" />
             <AppsMain class="webAppsMain" />
         </section>
-        <Footer />
+        <Footer class="footer" />
     </div>
 </template>
 
@@ -74,11 +74,17 @@ export default {
         left: 30%;
     }
 
+    .footer {
+        position: relative;
+        top: 100px;
+    }
+
     @media (max-width: 500px) {
         .webAppsSidebar {
             position: static;
             width: 90%;
             left: 0;
+            padding: 0;
         }
 
         .webAppsMain {
