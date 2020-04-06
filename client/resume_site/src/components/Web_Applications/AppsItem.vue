@@ -1,12 +1,26 @@
 <template>
-    <div>
-        <h1>{{ app.name }}</h1>
+    <div class="app-item" :id="app.anchor_link">
+        <div class="flex">
+            <h1>{{ app.name }}</h1>
+            <div class="tech-icon-section" >
+                <div v-for="image in app.technologies" :key="image.id" >
+                    <img class="technology-icon" :src="image.img_link" />
+                </div>
+            </div>
+        </div>
+        <!-- render conditionally if website link is included -->
+        <div v-if="app.url_link !== null">
+            <a :href="`${app.url_link}`" target="_blank">
+                <button class="website-btn" >View Website</button>
+            </a>
+        </div>
+        
         <h4>Details</h4>
         <p>{{ app.details }}</p>
         <h4>Dependencies</h4>
         <p>{{ app.dependencies }}</p>
         <div class="image-section">
-            <div v-for="image in app.images" :key="image.link">
+            <div v-for="image in app.images" :key="image.id">
                 <img class="app-image" :src="image.link" />
             </div>
         </div>
@@ -31,4 +45,42 @@ export default {
         height: auto;
         margin: 0px 5px;
     }
+    .tech-icon-section {
+        display: flex;
+        /* margin: 5px 0px; */
+    }
+
+    .technology-icon {
+        max-width: 30px;
+        margin: 0 5px;
+    }
+
+    .flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .app-item {
+        margin: 30px 0px;
+        padding: 10px 0px;
+        border-bottom: 1px solid var(--light-blue);
+    }
+
+    .website-btn {
+        color: var(--light-blue);
+        border: 2px solid var(--light-blue);
+        background-color: transparent;
+        padding: 10px;
+        width: auto;
+        font-size: 16px;
+        font-weight: 650;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .website-btn {
+            margin-left: 30%;
+        }
+    }
+
 </style>

@@ -3,7 +3,9 @@
         <h3 class="sidebar-title">Applications</h3>
         <div class="sidebar-application-items">
             <div v-for="app in applications" :key="app.id">
-                <h4 class="sidebar-app-item">{{ app.name }}</h4>
+                <a v-if="app.anchor_link !== null" :href="`#${app.anchor_link}`">
+                    <h4 class="sidebar-app-item">{{ app.name }}</h4>
+                </a>
             </div>
         </div>
     </div>
@@ -14,10 +16,10 @@ export default {
     name: "AppsSidebar",
     data: () => ({
         applications: [
-            { id: 1, name: "Watchlists.io | Stock App", url_link: 'http://watchlists.io/', anchor_link: '#watchlists' },
-            { id: 2, name: "Amazon Prime Video Clone", url_link: 'https://amazon-review-service.herokuapp.com/', anchor_link: '#amazon' },
-            { id: 3, name: "Weather App", url_link: '#', anchor_link: '#weather' },
-            { id: 4, name: "Basic Image Editor", url_link: '#', anchor_link: '#image-editor' },
+            { id: 1, name: "Watchlists.io | Stock App", url_link: 'http://watchlists.io/', anchor_link: 'watchlist' },
+            { id: 2, name: "Amazon Prime Video Clone", url_link: 'https://amazon-review-service.herokuapp.com/', anchor_link: 'amazon' },
+            { id: 3, name: "Weather App", url_link: 'https://bellis0.github.io/weather-app/', anchor_link: 'weather' },
+            { id: 4, name: "Basic Image Editor", url_link: null, anchor_link: 'image-editor' },
         ]
     })
 }
