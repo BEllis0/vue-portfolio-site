@@ -18,12 +18,14 @@ export default {
 </script>
 
 <style scoped>
-    .test {
-        width: 50%;
-        height: 600px;
-    }
 
     .main {
         padding: 5px 50px 5px 0px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .main {
+            padding: 5px 0px;
+        }
     }
 </style>
