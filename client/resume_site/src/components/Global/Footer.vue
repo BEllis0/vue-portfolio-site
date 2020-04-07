@@ -12,7 +12,7 @@
                     <li class="footer-item">Resume</li>
                 </a>
                 <!-- About section on home page -->
-                <router-link to="#about"><li class="footer-item">About</li></router-link>
+                <router-link to="/#about"><li class="footer-item">About</li></router-link>
                 <!-- Dropdown menu for projects -->
                 <v-menu transition="slide-y-transition" bottom>
                     <template v-slot:activator="{ on }">
