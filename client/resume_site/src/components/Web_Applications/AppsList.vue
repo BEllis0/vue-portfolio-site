@@ -36,6 +36,7 @@ export default {
                 name: "Watchlists.io | Stock App",
                 url_link: 'http://watchlists.io/',
                 anchor_link: 'watchlist',
+                github: 'https://github.com/BEllis0/Stock-App',
                 technologies: [
                     {id: 543, img_link: javascript},
                     {id: 1234, img_link: react},
@@ -65,6 +66,7 @@ export default {
                 name: "Amazon Prime Video Clone",
                 url_link: 'https://amazon-review-service.herokuapp.com/',
                 anchor_link: 'amazon',
+                github: 'https://github.com/obnoxious-hippopotamus/review-service',
                 technologies: [
                     {id: 5431010, img_link: javascript},
                     {id: 123411, img_link: react},
@@ -91,6 +93,7 @@ export default {
                 name: "Weather App",
                 url_link: 'https://bellis0.github.io/weather-app/',
                 anchor_link: 'weather',
+                github: 'https://github.com/BEllis0/weather-app',
                 technologies: [
                     {id: 543010, img_link: javascript},
                     {id: 12311, img_link: react},
@@ -110,6 +113,7 @@ export default {
                 name: "Image Editor",
                 url_link: null,
                 anchor_link: 'image-editor',
+                github: 'https://github.com/BEllis0/image-editor',
                 technologies: [
                     {id: 5430910, img_link: javascript},
                     {id: 141195, img_link: jquery},

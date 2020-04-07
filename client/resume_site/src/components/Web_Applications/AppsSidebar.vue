@@ -8,6 +8,14 @@
                 </a>
             </div>
         </div>
+        <div class="github-link">
+            <a href="https://github.com/BEllis0/" target="_blank">
+                <h3>Github</h3>
+            </a>
+            <a href="https://github.com/BEllis0" target="_blank">
+                <img class="github icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-circle-512.png" />
+            </a>
+        </div>
     </div>
 </template>
 
@@ -38,4 +46,15 @@ export default {
     .sidebar-app-item {
         padding: 3px;
     }
+
+    .github-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .github {
+        width: 50px;
+        height: 50px;
+    }
+
 </style>

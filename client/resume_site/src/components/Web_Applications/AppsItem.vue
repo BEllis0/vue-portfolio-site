@@ -1,7 +1,12 @@
 <template>
     <div class="app-item" :id="app.anchor_link">
         <div class="flex">
-            <h1>{{ app.name }}</h1>
+            <div class="flex">
+                <h1>{{ app.name }}</h1>
+                <a :href="`${app.github}`" target="_blank">
+                    <img class="github icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-circle-512.png" />
+                </a>
+            </div>
             <div class="tech-icon-section" >
                 <div v-for="image in app.technologies" :key="image.id" >
                     <img class="technology-icon" :src="image.img_link" />
@@ -75,6 +80,11 @@ export default {
         font-size: 16px;
         font-weight: 650;
         border-radius: 5px;
+    }
+
+    .github {
+        width: 30px;
+        height: 30px;
     }
 
     @media screen and (max-width: 500px) {
