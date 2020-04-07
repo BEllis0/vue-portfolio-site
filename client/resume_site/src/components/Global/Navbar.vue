@@ -102,7 +102,7 @@ export default {
         absolute: true,
         overlay: false,
         items: [
-            { title: 'Web Design', link: '/web-apps' },
+            { title: 'Web Design', link: '/web-designs' },
             { title: 'Web Applications', link: '/web-apps' },
             { title: 'Data Visualization', link: '/web-apps' },
         ]

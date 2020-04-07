@@ -1,32 +1,20 @@
 <template>
-    <div class="app-item" :id="app.anchor_link">
-        <div class="flex">
-            <div class="flex">
-                <h1>{{ app.name }}</h1>
-                <a :href="`${app.github}`" target="_blank">
-                    <img class="github icon" src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-circle-512.png" />
-                </a>
-            </div>
-            <div class="tech-icon-section" >
-                <div v-for="image in app.technologies" :key="image.id" >
-                    <img class="technology-icon" :src="image.img_link" />
-                </div>
-            </div>
+    <div class="design-item" :id="design.anchor_link">
+        <div>
+            <h1>{{ design.name }}</h1>
         </div>
         <!-- render conditionally if website link is included -->
-        <div v-if="app.url_link !== null">
-            <a :href="`${app.url_link}`" target="_blank">
+        <div v-if="design.url_link !== null">
+            <a :href="`${design.url_link}`" target="_blank">
                 <button class="website-btn" >View Website</button>
             </a>
         </div>
         
         <h4>Details</h4>
-        <p>{{ app.details }}</p>
-        <h4>Dependencies</h4>
-        <p>{{ app.dependencies }}</p>
+        <p>{{ design.details }}</p>
         <div class="image-section">
-            <div v-for="image in app.images" :key="image.id">
-                <img class="app-image" :src="image.link" />
+            <div v-for="image in design.images" :key="image.id">
+                <img class="design-image" :src="image.link" />
             </div>
         </div>
     </div>
@@ -34,8 +22,8 @@
 
 <script>
 export default {
-    name: "AppsItem",
-    props: ["app"]
+    name: "DesignsItem",
+    props: ["design"]
 }
 </script>
 
@@ -45,7 +33,7 @@ export default {
         flex-wrap: wrap;
     }
 
-    .app-image {
+    .design-image {
         width: 250px;
         height: auto;
         margin: 0px 5px;
@@ -65,7 +53,7 @@ export default {
         justify-content: space-between;
     }
 
-    .app-item {
+    .design-item {
         margin: 30px 0px;
         padding: 10px 0px;
         border-bottom: 1px solid var(--light-blue);
