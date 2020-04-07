@@ -3,24 +3,24 @@
         <div class="main-page-container">
             <h2 class="light-blue-text h2 section-title">PROJECTS & SAMPLES</h2>
             <div class="flex project-list">
-                <a class="project-item blurb-blue" href="">
+                <router-link to="/web-designs" class="project-item blurb-blue" >
                     <div>
                         <img class="project-icon" src="https://image.flaticon.com/icons/svg/2522/2522213.svg" />
                         <h3 class="project-title">Web Design</h3>
                     </div>
-                </a>
-                <a class="project-item blurb-blue" href="">
+                </router-link>
+                <router-link to="/web-apps" class="project-item blurb-blue" >
                     <div>
                         <img class="project-icon" src="https://image.flaticon.com/icons/svg/1781/1781648.svg" />
                         <h3 class="project-title">Web Applications</h3>
                     </div>
-                </a>
-                <a class="project-item blurb-blue" href="">
+                </router-link>
+                <router-link to="/web-designs" class="project-item blurb-blue" >
                     <div>
                         <img class="project-icon" src="https://image.flaticon.com/icons/svg/2289/2289207.svg" />
                         <h3 class="project-title">Data Visualizations</h3>
                     </div>
-                </a>
+                </router-link>
             </div>
         </div>
     </div>
