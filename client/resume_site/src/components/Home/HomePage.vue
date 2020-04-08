@@ -1,12 +1,19 @@
 <template>
     <div class="homePage">
-        <HomeBanner />
-        <HomeBio />
+        <HomeBanner 
+            :updateContact="updateContact" 
+        />
+        <HomeBio
+            :changeToFalse="changeToFalse" 
+            :updateContact="updateContact" 
+            v-bind:page="page"
+            v-bind:over="over"
+        />
         <HomeProjects />
         <HomeClients />
         <HomeTestimonials />
         <HomeContact />
-        <Footer />
+        <Footer :updateContact="updateContact" />
     </div>
 </template>
 
@@ -29,6 +36,20 @@ export default {
         HomeTestimonials,
         HomeContact,
         Footer
+    },
+    data: () => ({
+            page: 'Home',
+            over: false
+    }),
+    methods: {
+        //change overlay to true
+        updateContact: function() {
+            this.over = true
+        },
+        //change overlay to false
+        changeToFalse: function() {
+            this.over = false;
+        }
     }
 }
 </script>

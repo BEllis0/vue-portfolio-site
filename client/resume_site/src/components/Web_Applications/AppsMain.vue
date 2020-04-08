@@ -1,19 +1,26 @@
 <template>
     <div>
         <div class="main">
-        <AppsList />
+            <ContactOverlay 
+                :changeToFalse="this.changeToFalse"
+                v-bind:over="this.over" 
+            />
+            <AppsList />
         </div>
     </div>
 </template>
 
 <script>
 import AppsList from './AppsList.vue';
+import ContactOverlay from '../Global/ContactOverlay.vue';
 
 export default {
     name: "AppsMain",
     components: {
-        AppsList
-    }
+        AppsList,
+        ContactOverlay
+    },
+    props: ["over", "changeToFalse"]
 }
 </script>
 
