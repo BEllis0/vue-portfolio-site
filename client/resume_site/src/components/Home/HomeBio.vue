@@ -1,7 +1,16 @@
 <template>
     <div class="module">
         <div class="main-page-container">
-            <Navbar />
+            <Navbar
+                :updateContact="this.updateContact"
+                v-bind:page="this.page"
+            />
+
+            <ContactOverlay
+                :changeToFalse="this.changeToFalse"
+                v-bind:over="this.over"
+            />
+
             <div id="about" class="flex">
                 <div class="bio-left">
                     <div class="profile-left">
@@ -28,14 +37,20 @@
 import Navbar from '../Global/Navbar.vue';
 import SocialIcons from '../Global/SocialIcons.vue';
 import SocialRepos from '../Global/SocialRepos.vue';
+import ContactOverlay from '../Global/ContactOverlay.vue';
 
 export default {
     name: "HomeBio",
     components: {
         SocialIcons,
         SocialRepos,
-        Navbar
-    }
+        Navbar,
+        ContactOverlay
+    },
+    props: ["over", "page", "changeToFalse", "updateContact"],
+    created: function() {
+        console.log('home bio', this)
+    },
 }
 </script>
 

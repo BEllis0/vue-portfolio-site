@@ -1,19 +1,27 @@
 <template>
     <div>
         <div class="main">
-        <DesignsList />
+        <ContactOverlay
+            :changeToFalse="this.changeToFalse"
+            v-bind:over="this.over" 
+        />
+        <DesignsList  />
         </div>
     </div>
 </template>
 
 <script>
 import DesignsList from './DesignsList.vue';
+import ContactOverlay from '../Global/ContactOverlay.vue';
+
 
 export default {
     name: "DesignsMain",
     components: {
-        DesignsList
-    }
+        DesignsList,
+        ContactOverlay
+    },
+    props: ["over", "changeToFalse"],
 }
 </script>
 

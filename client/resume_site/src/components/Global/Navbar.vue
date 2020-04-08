@@ -24,7 +24,8 @@
                         </v-list-item>
                     </v-list>
                 </v-menu>
-                <li @click="overlay = !overlay" class="nav-item">Contact</li>
+                <!-- Contact - triggers event to display component -->
+                <li @click="this.updateContact" class="nav-item">Contact</li>
             </ul>
             
             <!-- ===== MOBILE/TABLET MENU ===== -->
@@ -52,61 +53,29 @@
                         </v-list-item>
                     </v-list>
                 </v-menu>
-                
-                <li @click="overlay = !overlay" class="nav-item">Contact</li>
+                <!-- Contact - triggers event to display component -->
+                <li @click="this.updateContact" class="nav-item">Contact</li>
                 </div>
             </ul>
-
-            <!-- ===== CONTACT OVERLAY ===== -->
-
-            <!-- <ContactOverlay
-                absolute=true,
-                overlay=false
-             /> -->
-            <v-overlay :absolute="absolute" :value="overlay">
-                <div class="contact-overlay">
-                    <div class="contact-info-section">
-                        <h3 class="remove-margin">Brandon Ellis</h3>
-                        <p class="remove-margin">Web Development | Digital Marketing</p>
-                        <a href="mailto:brandonellis.email@gmail.com?subject=Website Inquery" target="_blank">
-                            <p class="remove-margin">brandonellis.email@gmail.com</p>
-                        </a>
-
-                        <p class="remove-margin">+1 (518) 354-3096</p>
-                        <SocialIcons />
-                        <p class="remove-margin">I am available for freelance projects and employment.</p>
-                        <p>If you want to collaborate on designing a beautiful and effective website, or you're looking to add a creative problem solver to your development team, please feel free to reach out.</p>
-                        <p class="remove-margin right-align">Built with <a href="https://vuejs.org/" target="_blank">Vue.js</a></p>
-                        <p class="remove-margin right-align">View the code on <a href="https://github.com/BEllis0/vue-portfolio-site" target="_blank">Github</a></p>
-                    </div>
-                    <v-btn color="#7aa3c1" class="hide-contact" @click="overlay = false">
-                        Hide Contact Info
-                    </v-btn>
-                </div>
-            </v-overlay>
         </nav>
     </div>
 </template>
 
 <script>
-import SocialIcons from './SocialIcons.vue';
-// import ContactOverlay from './ContactOverlay.vue';
 
 export default {
     name: "Navbar",
-    components: {
-        SocialIcons
-        // ContactOverlay
-    },
+    props: ["updateContact", "page"],
     data: () => ({
-        absolute: true,
-        overlay: false,
         items: [
             { title: 'Web Design', link: '/web-designs' },
             { title: 'Web Applications', link: '/web-apps' },
             { title: 'Data Visualization', link: '/web-apps' },
         ]
-    })
+    }),
+    created: function() {
+        console.log(this);
+    }
 }
 </script>
 

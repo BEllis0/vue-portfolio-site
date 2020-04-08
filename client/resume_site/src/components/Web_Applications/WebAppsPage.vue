@@ -4,15 +4,19 @@
             <div class="header flex">
                 <h1 class="page-title">Projects & Samples</h1>
                 <div class="navbar-section">
-                    <Navbar />
+                    <Navbar :page="page" :updateContact="updateContact" />
                 </div>
             </div>
         </div>
         <section class="body flex">
             <AppsSidebar class="webAppsSidebar" />
-            <AppsMain class="webAppsMain" />
+            <AppsMain
+                class="webAppsMain" 
+                v-bind:over="over"
+                :changeToFalse="changeToFalse"
+            />
         </section>
-        <Footer class="footer" />
+        <Footer :updateContact="updateContact" class="footer" />
     </div>
 </template>
 
@@ -29,6 +33,19 @@ export default {
         AppsMain,
         AppsSidebar,
         Footer
+    },
+    data: () => ({
+            page: 'web apps',
+            over: false
+    }),
+    methods: {
+        //change overlay to true
+        updateContact: function() {
+            this.over = true
+        },
+        changeToFalse: function() {
+            this.over = false;
+        }
     }
 }
 </script>

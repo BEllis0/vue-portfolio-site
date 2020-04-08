@@ -1,5 +1,5 @@
 <template>
-    <v-overlay :absolute="absolute" :value="overlay">
+    <v-overlay  :value="this.over">
         <div class="contact-overlay">
             <div class="contact-info-section">
                 <h3 class="remove-margin">Brandon Ellis</h3>
@@ -17,7 +17,7 @@
                 <br />
                 <p class="remove-margin">View the code on <a href="https://github.com/BEllis0/vue-portfolio-site" target="_blank">Github</a></p>
             </div>
-            <v-btn color="#7aa3c1" class="hide-contact" @click="overlay = false">
+            <v-btn color="#7aa3c1" class="hide-contact" @click="this.changeToFalse">
                 Hide Contact Info
             </v-btn>
         </div>
@@ -32,10 +32,10 @@ export default {
     components: {
         SocialIcons
     },
-    data: () => ({
-        absolute: true,
-        overlay: false
-    })
+    props: ["over", "changeToFalse"],
+    created: function() {
+        console.log('overlay', this);
+    }
 }
 </script>
 

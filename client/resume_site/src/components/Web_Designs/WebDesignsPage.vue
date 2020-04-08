@@ -4,15 +4,28 @@
             <div class="header flex">
                 <h1 class="page-title">Projects & Samples</h1>
                 <div class="navbar-section">
-                    <Navbar />
+                    <Navbar 
+                        :updateContact="updateContact"
+                        :page="page"
+                    />
                 </div>
             </div>
         </div>
         <section class="body flex">
             <DesignsSidebar class="webDesignsSidebar" />
-            <DesignsMain class="webDesignsMain" />
+
+            <DesignsMain
+                v-bind:over="over"
+                v-bind:page="page"
+                :changeToFalse="changeToFalse"
+                class="webDesignsMain"
+            />
+
         </section>
-        <Footer class="footer" />
+        <Footer
+            :updateContact="updateContact"
+            class="footer"
+        />
     </div>
 </template>
 
@@ -29,6 +42,21 @@ export default {
         DesignsMain,
         DesignsSidebar,
         Footer
+    },
+    data: () => ({
+            page: 'design',
+            over: false
+    }),
+    methods: {
+        //change overlay to true
+        updateContact() {
+            console.log('design page');
+            this.over = true
+        },
+        //change overlay to false
+        changeToFalse() {
+            this.over = false;
+        }
     }
 }
 </script>
