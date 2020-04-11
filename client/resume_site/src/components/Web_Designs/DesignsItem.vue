@@ -10,11 +10,12 @@
             </a>
         </div>
         
-        <h4>Details</h4>
-        <p>{{ design.details }}</p>
+        <h3>Details</h3>
+        <p class="details-section">{{ design.details }}</p>
+        <h3>Images</h3>
         <div class="image-section">
             <div v-for="image in design.images" :key="image.id">
-                <img class="design-image" :src="image.link" />
+                <img class="design-image" v-lazy="image.link" />
             </div>
         </div>
     </div>

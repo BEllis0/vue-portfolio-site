@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router';
 import vuetify from './plugins/vuetify';
+import VueLazyload from 'vue-lazyload'
 
 //route pages
 import HomePage from './components/Home/HomePage.vue';
@@ -10,10 +11,8 @@ import WebDesignsPage from './components/Web_Designs/WebDesignsPage.vue';
 
 Vue.config.productionTip = false
 
-//access to vue router
-Vue.use(VueRouter);
-
-// Vue.use(vuetify);
+Vue.use(VueRouter); //access to vue router
+Vue.use(VueLazyload); // lazy load
 
 //define routes
 const routes = [

@@ -19,9 +19,9 @@ export default {
             { id: 1, name: "The Center for Women's Health Research", url_link: 'cwhr.org', anchor_link: 'cwhr' },
             { id: 2, name: "National Retail Concept Partners", url_link: 'nrcpartners.com', anchor_link: 'nrcp' },
             { id: 3, name: "Third Sector Communication Strategies", url_link: 'https://tscstrategies.com/', anchor_link: 'tscs' },
-            { id: 4, name: "Cry Without Tears", url_link: 'crywithouttears.org', anchor_link: 'cwt' },
+            { id: 4, name: "The Reciprocity Collective", url_link: 'reciprocitycollective.org', anchor_link: 'trc' },
             { id: 5, name: "Close to Home CO", url_link: 'closetohomeco.org', anchor_link: 'cth' },
-            { id: 6, name: "The Reciprocity Collective", url_link: 'reciprocitycollective.org', anchor_link: 'reciprocity' },
+            { id: 6, name: "Cry Without Tears", url_link: 'crywithouttears.org', anchor_link: 'cwt' },
         ]
     })
 }
