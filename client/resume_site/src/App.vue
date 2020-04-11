@@ -91,6 +91,10 @@ export default {
       text-decoration: none !important;
   }
 
+  p {
+    font-size: 17px;
+  }
+
   /* ===== container styles ===== */
 
   /* Main content sections */
@@ -104,6 +108,10 @@ export default {
     width: 100%;
     padding: 20px 0px;
     background-color: black;
+  }
+
+  .details-section {
+    width: 75%;
   }
 
   /* ==== Contact Info Overlay ==== */
