@@ -9,7 +9,7 @@
             </div>
             <div class="tech-icon-section" >
                 <div v-for="image in app.technologies" :key="image.id" >
-                    <img class="technology-icon" :src="image.img_link" />
+                    <img class="technology-icon" v-lazy="image.img_link" />
                 </div>
             </div>
         </div>
@@ -21,9 +21,10 @@
         </div>
         
         <h4>Details</h4>
-        <p>{{ app.details }}</p>
+        <p class="details-section">{{ app.details }}</p>
         <h4>Dependencies</h4>
-        <p>{{ app.dependencies }}</p>
+        <p class="details-section">{{ app.dependencies }}</p>
+        <h4>Images</h4>
         <div class="image-section">
             <div v-for="image in app.images" :key="image.id">
                 <img class="app-image" :src="image.link" />

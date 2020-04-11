@@ -47,12 +47,12 @@ export default {
                     {id: 88888, img_link: mongoose},
                     {id: 43, img_link: heroku},
                 ],
-                details: `Built using the MERN stack (Mongoose, Express, React & Node). 
-                            Uses Alpha Vantage API for real time and historical stock data and Google News API for stock news. 
+                details: `Built with the MERN stack and Alpha Vantage and News API to display realtime and historical stock data and news, allow users to create an account, and to create watchlists. 
+                            Displays stock pricing, volume, and indicator data in a variety of timeframes views, including daily, weekly, monthly, six months, yearly, and multi-year. 
                             Designed with Material UI. 
-                            Includes password hashing with bcryptjs. 
+                            Includes password hashing and session tokens for user authentication. 
                             Uses Google Recaptcha to secure forms. 
-                            Throttling and debouncing with lodash.`,
+                            Throttling and debouncing API call limits with lodash.`,
                 dependencies: `Backend: bcrypt, cors, dotenv, express, mongoose, newsapi, nodemon, pusher, validator | 
                             Frontend: axios, @material-ui/core, @material-ui/icons, @material-ui/lab, react, react-dom, react-router, react-router-dom, chart.js, react-chartjs-2, lodash, http-proxy-middleware, react-recaptcha-google`,
                 images: [
