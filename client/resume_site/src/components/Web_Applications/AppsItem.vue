@@ -34,9 +34,14 @@
 </template>
 
 <script>
+// import LightBox from 'vue-image-lightbox';
+
 export default {
     name: "AppsItem",
-    props: ["app"]
+    props: ["app"],
+    components: {
+        // LightBox
+    }
 }
 </script>
 

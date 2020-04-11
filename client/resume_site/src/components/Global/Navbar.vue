@@ -48,7 +48,7 @@
                         <li v-on="on" class="nav-item">Projects & Samples</li>
                     </template>
                     <v-list>
-                        <v-list-item v-for="(item, i) in items" :key="i">
+                        <v-list-item :to="item.link" v-for="(item, i) in items" :key="i">
                             <v-list-item-title>{{ item.title }}</v-list-item-title>
                         </v-list-item>
                     </v-list>
@@ -73,9 +73,6 @@ export default {
             { title: 'Data Visualization', link: '/web-apps' },
         ]
     }),
-    created: function() {
-        console.log(this);
-    }
 }
 </script>
 

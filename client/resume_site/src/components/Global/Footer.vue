@@ -49,7 +49,7 @@
                         <li v-on="on" class="footer-item">Projects & Samples</li>
                     </template>
                     <v-list>
-                        <v-list-item v-for="(item, i) in items" :key="i">
+                        <v-list-item :to="item.link" v-for="(item, i) in items" :key="i">
                             <v-list-item-title>{{ item.title }}</v-list-item-title>
                         </v-list-item>
                     </v-list>
