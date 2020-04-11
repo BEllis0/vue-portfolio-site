@@ -52,6 +52,7 @@ export default {
         console.log('home bio', this)
     },
 }
+
 </script>
 
 <style scoped>
