@@ -70,7 +70,7 @@ export default {
         items: [
             { title: 'Web Design', link: '/web-designs' },
             { title: 'Web Applications', link: '/web-apps' },
-            { title: 'Data Visualization', link: '/web-apps' },
+            { title: 'Data Visualization', link: '/data-visualization' },
         ]
     }),
 }
