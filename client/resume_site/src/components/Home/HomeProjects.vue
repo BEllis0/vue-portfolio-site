@@ -43,8 +43,8 @@ export default {
         text-decoration: none;
     }
 
-    a:hover {
-        color: black;
+    .project-item:hover {
+        color: black !important;
     }
 
     .project-title {
