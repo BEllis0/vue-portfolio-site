@@ -33,9 +33,6 @@ export default {
         SocialIcons
     },
     props: ["over", "changeToFalse"],
-    created: function() {
-        console.log('overlay', this);
-    }
 }
 </script>
 
