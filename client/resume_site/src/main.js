@@ -20,7 +20,7 @@ const routes = [
   { path: '/', component: HomePage },
   { path: '/web-apps', component: WebAppsPage },
   { path: '/web-designs', component: WebDesignsPage },
-  { path: '/data-visualization', component: dataVisualsPage },
+  { path: '/data-visualization', component: DataVisualsPage },
 ];
 
 const router = new VueRouter({
