@@ -8,6 +8,7 @@ import VueLazyload from 'vue-lazyload';
 import HomePage from './components/Home/HomePage.vue';
 import WebAppsPage from './components/Web_Applications/WebAppsPage.vue';
 import WebDesignsPage from './components/Web_Designs/WebDesignsPage.vue';
+import DataVisualsPage from './components/Data_Visualizations/DataVisualsPage.vue';
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,7 @@ const routes = [
   { path: '/', component: HomePage },
   { path: '/web-apps', component: WebAppsPage },
   { path: '/web-designs', component: WebDesignsPage },
+  { path: '/data-visualization', component: DataVisualsPage },
 ];
 
 const router = new VueRouter({
