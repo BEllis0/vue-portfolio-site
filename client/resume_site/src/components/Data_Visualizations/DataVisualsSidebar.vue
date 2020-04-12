@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar">
-        <h3 class="sidebar-title">Designs</h3>
+        <h3 class="sidebar-title">Data Visualizations</h3>
         <div class="sidebar-data-visuals-items">
             <div v-for="visual in visuals" :key="visual.id">
                 <a v-if="visual.anchor_link !== null" :href="`#${visual.anchor_link}`">
@@ -20,8 +20,6 @@ export default {
             { id: 2, name: "National Retail Concept Partners", url_link: 'nrcpartners.com', anchor_link: 'nrcp' },
             { id: 3, name: "Third Sector Communication Strategies", url_link: 'https://tscstrategies.com/', anchor_link: 'tscs' },
             { id: 4, name: "The Reciprocity Collective", url_link: 'reciprocitycollective.org', anchor_link: 'trc' },
-            { id: 5, name: "Close to Home CO", url_link: 'closetohomeco.org', anchor_link: 'cth' },
-            { id: 6, name: "Cry Without Tears", url_link: 'crywithouttears.org', anchor_link: 'cwt' },
         ]
     })
 }
