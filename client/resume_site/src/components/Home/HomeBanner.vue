@@ -24,9 +24,6 @@ export default {
         BrandonShamelessPlug,
     },
     props: ["updateContact"],
-    created: function() {
-        console.log('home banner', this.updateContact)
-    },
 }
 </script>
 

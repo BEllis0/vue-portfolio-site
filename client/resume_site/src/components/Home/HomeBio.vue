@@ -48,9 +48,6 @@ export default {
         ContactOverlay
     },
     props: ["over", "page", "changeToFalse", "updateContact"],
-    created: function() {
-        console.log('home bio', this)
-    },
 }
 
 </script>
