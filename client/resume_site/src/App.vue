@@ -20,7 +20,7 @@ export default {
   },
   async created() {
     try {
-      this.profile = await ProfileApi.getProfile(process.env.PROFILE_ID);
+      this.profile = await ProfileApi.getProfile(1);
     } catch(err) {
       this.error = err;
     }

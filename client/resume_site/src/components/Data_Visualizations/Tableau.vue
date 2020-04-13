@@ -4,9 +4,6 @@
 </template>
 
 <script>
-import tableau from "tableau-api";
-
-console.log(tableau)
 
 export default {
     name: 'Tableau',
