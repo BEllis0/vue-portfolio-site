@@ -16,10 +16,12 @@ export default {
     name: "DataVisualSidebar",
     data: () => ({
         visuals: [
-            { id: 1, name: "The Center for Women's Health Research", url_link: 'cwhr.org', anchor_link: 'cwhr' },
-            { id: 2, name: "National Retail Concept Partners", url_link: 'nrcpartners.com', anchor_link: 'nrcp' },
-            { id: 3, name: "Third Sector Communication Strategies", url_link: 'https://tscstrategies.com/', anchor_link: 'tscs' },
-            { id: 4, name: "The Reciprocity Collective", url_link: 'reciprocitycollective.org', anchor_link: 'trc' },
+            { id: 1, name: "Metro Denver Housing Resource Finder", anchor_link: 'resource_finder' },
+            { id: 2, name: "Close to Home Pledge Supporters", anchor_link: 'pledge' },
+            { id: 3, name: "Denver Metro Area Food Resources", anchor_link: 'food' },
+            { id: 4, name: "Arts Community in Metro Denver", anchor_link: 'art' },
+            { id: 5, name: "Cryptocurrencies", anchor_link: 'crypto' },
+            { id: 6, name: "Bands I've Seen", anchor_link: 'bands' },
         ]
     })
 }
