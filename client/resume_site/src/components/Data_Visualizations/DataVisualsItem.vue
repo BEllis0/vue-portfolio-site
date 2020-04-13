@@ -13,18 +13,18 @@
         <h3>Details</h3>
         <p class="details-section">{{ visual.details }}</p>
         <h3>Data Visualization</h3>
-        <Tableau :id="visual.id" :url="visual.viz" :height="visual.height" :width="visual.width" ref="tableau"  />
+        <img class="data-viz-image" :src="visual.viz.url" :alt="visual.viz.alt" />
     </div>
 </template>
 
 <script>
-import Tableau from './Tableau.vue';
+
 
 export default {
     name: "DataVisualsItem",
     props: ["visual"],
     components: {
-        Tableau
+        
     }
 }
 </script>
@@ -62,6 +62,10 @@ export default {
     .github {
         width: 30px;
         height: 30px;
+    }
+
+    .data-viz-image {
+        width: 100%;
     }
 
     @media screen and (max-width: 500px) {
