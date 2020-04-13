@@ -18,78 +18,55 @@ export default {
         DataVisualsItems: [
             { 
                 id: 1,
-                name: "The Center for Women's Health Research",
-                url_link: 'http://cwhr.org/',
-                anchor_link: 'cwhr',
-                details: `Acted as lead developer and project manager for a content management system transition. 
-                            Designed wireframes, navigation flow, user experience & interface, and a re-usable component library.
-                            Worked with CWHR staff, leadership and stakeholders on all phases including initial concept, development, review, user testing and deployment.
-                            Worked with University departments to ensure site met accessiblity and branding standards.`,
-                images: [
-                    {id: 15437, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380005/cwhr-homepage-scaled_vod7ms.png', alt_text: ''},
-                    {id: 25688, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380002/cwhr-newsblogpage-scaled_cwssx6.png', alt_text: ''},
-                    {id: 384821, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380006/cwhr-givingpage-scaled_xavn1r.png', alt_text: ''},
-                    {id: 4821, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380001/cwhr-researchpage-scaled_vfaf5w.jpg', alt_text: ''}
-                ]
+                name: "Metro Denver Housing Resource Finder",
+                url_link: 'https://public.tableau.com/profile/brandon3955#!/vizhome/FindanOrganization/Dashboard1',
+                anchor_link: 'resource_finder',
+                details: ``,
+                viz: 'https://public.tableau.com/views/FindanOrganization/Dashboard1'
             },
             { 
                 id: 2,
-                name: "National Retail Concept Partners",
-                url_link: 'http://nrcpartners.com/',
-                anchor_link: 'nrcp',
+                name: "Close to Home Pledge Supporters",
+                url_link: 'https://public.tableau.com/profile/brandon3955#!/vizhome/ClosetoHomePledgeSupporters/Dashboard1',
+                anchor_link: 'pledge',
                 details: ``,
-                images: [
-                    {id: 145223, link: 'https://res.cloudinary.com/btdigital/image/upload/v1550806012/nrcp-home-page-1_pzjfll.jpg', alt_text: ''},
-                    {id: 2506, link: 'https://res.cloudinary.com/btdigital/image/upload/v1550806007/nrcp-blog-1_p9rru8.jpg', alt_text: ''},
-                    {id: 3088, link: 'https://res.cloudinary.com/btdigital/image/upload/v1550806002/nrcp-services-2_sdxcz3.jpg', alt_text: ''}
-                ]
+                viz: 'https://public.tableau.com/views/ClosetoHomePledgeSupporters/Dashboard1'
             },
             { 
                 id: 3,
-                name: "Third Sector Communication Strategies",
-                url_link: 'https://tscstrategies.com/',
-                anchor_link: 'tscs',
+                name: "Denver Metro Area Food Resources",
+                url_link: 'https://public.tableau.com/profile/brandon3955#!/vizhome/Food-relatedOrganizationsinMetroDenver/Sheet1',
+                anchor_link: 'food',
                 details: ``,
-                images: [
-                    {id: 155321, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574379941/TSCS1-6_ukknzd.jpg', alt_text: ''},
-                    {id: 200056, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574379943/TSCS-Vroom-Design-2_rbpwgx.png', alt_text: ''},
-                ]
+                viz: 'https://public.tableau.com/views/Food-relatedOrganizationsinMetroDenver/Sheet1'
             },
             { 
                 id: 4,
-                name: "The Reciprocity Collective",
-                url_link: 'http://thereciprocitycollective.org',
-                anchor_link: 'trc',
+                name: "Arts Community in Metro Denver",
+                url_link: 'https://public.tableau.com/profile/brandon3955#!/vizhome/ArtsCommunityinMetroDenver/Sheet1',
+                anchor_link: 'art',
                 details: ``,
-                images: [
-                    {id: 10343, link: 'https://res.cloudinary.com/btdigital/image/upload/v1586562330/trc-home.jpg'},
-                    {id: 250666, link: 'https://res.cloudinary.com/btdigital/image/upload/v1586562327/trc-volunteer.jpg'},
-                    {id: 388043, link: 'https://res.cloudinary.com/btdigital/image/upload/v1586562322/trc-donate.jpg'}
-                ]
+                viz: 'https://public.tableau.com/views/ArtsCommunityinMetroDenver/Sheet1'
             },
             { 
                 id: 5,
-                name: "Close to Home CO",
-                url_link: 'http://closetohomeco.org',
-                anchor_link: 'cth',
-                details: ``,
-                images: [
-                    {id: 10043243, link: 'https://res.cloudinary.com/btdigital/image/upload/v1550806015/cth-message-card_wzvgdd.jpg'},
-                    {id: 2500909096, link: 'https://res.cloudinary.com/btdigital/image/upload/v1550806933/Newsletter-CLOSE-TO-HOME-14_oukoc4.png'},
-                    {id: 3845338, link: 'https://res.cloudinary.com/btdigital/image/upload/v1550806932/Summer-Resources-CLOSE-TO-HOME-24_zodkrq.png'}
-                ]
+                name: "Cryptocurrencies",
+                url_link: 'https://public.tableau.com/profile/brandon3955#!/vizhome/Cryptocurrencies-lenthoftimebelow10/Story1',
+                anchor_link: 'crypto',
+                details: `Cryptocurrencies - The area in red reflects the period of time that the prices were below $10.`,
+                width: 1000,
+                height: 1000,
+                viz: 'https://public.tableau.com/views/Cryptocurrencies-lenthoftimebelow10/Story1'
             },
             { 
                 id: 6,
-                name: "Cry Without Tears",
-                url_link: 'https://www.crywithouttears.org/',
-                anchor_link: 'cwt',
+                name: "Bands I've Seen",
+                url_link: 'https://public.tableau.com/profile/brandon3955#!/vizhome/BandsIveSeen/Dashboard1',
+                anchor_link: 'bands',
                 details: ``,
-                images: [
-                    {id: 1438605, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380012/cwt-design-home-scaled_mh5icr.png'},
-                    {id: 2503456, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380054/cwt-design-getinvolved-scaled_tamqao.png'},
-                    {id: 3896058, link: 'https://res.cloudinary.com/btdigital/image/upload/v1574380009/cwt-design-programs-scaled_ds9591.jpg'}
-                ]
+                width: 1000,
+                height: 1000,
+                viz: 'https://public.tableau.com/views/BandsIveSeen/Dashboard1'
             },
         ]
     })

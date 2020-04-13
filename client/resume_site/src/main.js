@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router';
 import vuetify from './plugins/vuetify';
 import VueLazyload from 'vue-lazyload';
+import 'vue-tableau';
 
 //route pages
 import HomePage from './components/Home/HomePage.vue';

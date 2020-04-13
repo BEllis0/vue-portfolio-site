@@ -13,14 +13,19 @@
         <h3>Details</h3>
         <p class="details-section">{{ visual.details }}</p>
         <h3>Data Visualization</h3>
-        
+        <Tableau :id="visual.id" :url="visual.viz" :height="visual.height" :width="visual.width" ref="tableau"  />
     </div>
 </template>
 
 <script>
+import Tableau from './Tableau.vue';
+
 export default {
     name: "DataVisualsItem",
-    props: ["visual"]
+    props: ["visual"],
+    components: {
+        Tableau
+    }
 }
 </script>
 
