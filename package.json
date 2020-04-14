@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "author": "",
-  "engines": {
-    "node": "13.12.0",
-    "npm": "6.14.4"
-  },
   "scripts": {
     "build": "cd client/resume_site && npm install && npm run build",
-    "start": "node server/server.js",
-    "start:dev": "nodemon server/server.js",
+    "test:unit": "vue-cli-service test:unit",
+    "artillery-test": "artillery run artillery.yml",
     "heroku-postinstall": "npm install && npm run build",
-    "artillery-test": "artillery run artillery.yml"
+    "start": "node server/server.js",
+    "start:dev": "nodemon server/server.js"
   },
   "main": "index.js",
   "dependencies": {
@@ -21,6 +18,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "flush-promises": "^1.0.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "vue-image-lightbox": "^7.0.0",
@@ -30,10 +28,15 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-unit-jest": "^4.3.1",
+    "@vue/test-utils": "1.0.0-beta.31",
     "nodemon": "^2.0.2"
   },
   "bugs": {
     "url": "https://github.com/BEllis0/vue-portfolio-site/issues"
+  },
+  "engines": {
+    "node": "13.12.0",
+    "npm": "6.14.4"
   },
   "homepage": "https://github.com/BEllis0/vue-portfolio-site#readme",
   "license": "ISC",
