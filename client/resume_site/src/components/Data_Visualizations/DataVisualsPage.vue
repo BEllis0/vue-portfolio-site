@@ -50,7 +50,6 @@ export default {
     methods: {
         //change overlay to true
         updateContact() {
-            console.log('data visuals page');
             this.over = true
         },
         //change overlay to false

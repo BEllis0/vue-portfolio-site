@@ -1,4 +1,4 @@
-const webDesignUrl = '/api/web-applications';
+const webDesignUrl = '/api/web-designs';
 
 class WebDesignsApi {
     static getWebDesigns() {
