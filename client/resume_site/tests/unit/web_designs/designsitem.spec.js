@@ -1,8 +1,10 @@
 import { shallowMount } from '@vue/test-utils'
 import DesignsItem from '../../../src/components/Web_Designs/DesignsItem.vue';
 
+Vue.use(lazy);
+
 const designsItem = shallowMount(DesignsItem, {
-    stubs: ['router-link'],
+    stubs: ['router-link', 'v-lazy'],
     propsData: {
         design: {
           id: 1,
