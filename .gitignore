@@ -6,3 +6,10 @@ node_modules/
 #env
 .env
 env
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+/client/resume_site/coverage/
+/client/resume_site/coverage
+client/resume_site/coverage
