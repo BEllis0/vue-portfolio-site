@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586895474321" clover="3.2.0">
-  <project timestamp="1586895474321" name="All files">
-    <metrics statements="57" coveredstatements="51" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="9" elements="72" coveredelements="60" complexity="0" loc="57" ncloc="57" packages="4" files="16" classes="16"/>
+<coverage generated="1586895985248" clover="3.2.0">
+  <project timestamp="1586895985248" name="All files">
+    <metrics statements="70" coveredstatements="61" conditionals="0" coveredconditionals="0" methods="20" coveredmethods="12" elements="90" coveredelements="73" complexity="0" loc="70" ncloc="70" packages="5" files="20" classes="20"/>
     <package name="Data_Visualizations">
       <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
       <file name="DataVisualsList.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Data_Visualizations/DataVisualsList.vue">
@@ -33,7 +33,7 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="ContactOverlay.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Global/ContactOverlay.vue">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="28" count="7" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
       </file>
       <file name="Footer.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Global/Footer.vue">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -117,6 +117,34 @@
         <line num="37" count="1" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Web_Designs">
+      <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+      <file name="DesignsList.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Web_Designs/DesignsList.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="DesignsMain.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Web_Designs/DesignsMain.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="DesignsSidebar.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Web_Designs/DesignsSidebar.vue">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="WebDesignsPage.vue" path="/Users/brandonellis/Documents/Code Projects/vue_resume_site/client/resume_site/src/components/Web_Designs/WebDesignsPage.vue">
+        <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
       </file>
     </package>
   </project>
