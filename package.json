@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "author": "",
-  "engines": {
-    "node": "13.12.0",
-    "npm": "6.14.4"
-  },
   "scripts": {
     "build": "cd client/resume_site && npm install && npm run build",
+    "test:unit": "vue-cli-service test:unit",
+    "artillery-test": "artillery run artillery.yml",
+    "heroku-postinstall": "npm install && npm run build",
     "start": "node server/server.js",
     "start:dev": "nodemon server/server.js"
   },
@@ -29,6 +28,10 @@
   },
   "bugs": {
     "url": "https://github.com/BEllis0/vue-portfolio-site/issues"
+  },
+  "engines": {
+    "node": "13.12.0",
+    "npm": "6.14.4"
   },
   "homepage": "https://github.com/BEllis0/vue-portfolio-site#readme",
   "license": "ISC",
