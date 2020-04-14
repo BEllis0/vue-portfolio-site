@@ -26,7 +26,7 @@
                 </v-menu>
 
                 <!-- Contact - triggers event to display component -->
-                <li @click="updateContact" class="footer-item">Contact</li>
+                <li @click="updateContact" class="footer-item contact-link">Contact</li>
             </ul>
             
             <!-- ===== MOBILE/TABLET MENU ===== -->
@@ -56,7 +56,7 @@
                 </v-menu>
                 
                 <!-- Contact - triggers event to display component -->
-                <li @click="updateContact" class="footer-item">Contact</li>
+                <li @click="updateContact" class="footer-item contact-link">Contact</li>
                 </div>
             </ul>
         </nav>
@@ -82,12 +82,7 @@ export default {
             { title: 'Web Applications', link: '/web-apps' },
             { title: 'Data Visualization', link: '/data-visualization' },
         ]
-    }),
-    methods: {
-        created: function() {
-            console.log('footer', this)
-        }
-    },
+    })
 }
 </script>
 
