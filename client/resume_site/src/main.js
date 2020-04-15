@@ -11,7 +11,7 @@ import WebAppsPage from './components/Web_Applications/WebAppsPage.vue';
 import WebDesignsPage from './components/Web_Designs/WebDesignsPage.vue';
 import DataVisualsPage from './components/Data_Visualizations/DataVisualsPage.vue';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 Vue.use(VueRouter); //access to vue router
 Vue.use(VueLazyload); // lazy load
