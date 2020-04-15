@@ -15,7 +15,7 @@
                         <h3 class="project-title">Web Applications</h3>
                     </div>
                 </router-link>
-                <router-link to="/web-designs" class="project-item blurb-blue" >
+                <router-link to="/data-visualization" class="project-item blurb-blue" >
                     <div>
                         <img class="project-icon" src="https://image.flaticon.com/icons/svg/2289/2289207.svg" />
                         <h3 class="project-title">Data Visualizations</h3>
