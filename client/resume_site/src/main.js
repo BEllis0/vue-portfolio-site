@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import vuetify from './plugins/vuetify';
 import VueLazyload from 'vue-lazyload';
 import 'vue-tableau';
+import VueGtag from 'vue-gtag';
 
 //route pages
 import HomePage from './components/Home/HomePage.vue';
@@ -15,6 +16,7 @@ Vue.config.productionTip = false;
 
 Vue.use(VueRouter); //access to vue router
 Vue.use(VueLazyload); // lazy load
+
 
 //define routes
 const routes = [
@@ -28,6 +30,16 @@ const router = new VueRouter({
   routes,
   mode: 'history' // removes the hash in the url
 });
+
+// google analytics
+Vue.use(VueGtag, {
+  config: {
+    id: 'UA-96085895-7',
+    params: {}
+  },
+  appName: 'Portfolio Site - Vue',
+  pageTrackerScreenviewEnabled: true
+}, router);
 
 new Vue({
   el: '#app',
