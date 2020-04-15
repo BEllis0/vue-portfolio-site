@@ -5,6 +5,18 @@ Built with [Vue.js](https://vuejs.org/).
 
 View the site at [brandontellis.com](brandontellis.com).
 
+## Technologies
+
+Front End - Vue, Vue Router, Vue Lazy Load, Vuetify and CSS3<br>
+
+Back End - Node, Express, mysql<br>
+
+Testing - Cypress (e2e), Jest (unit), Artillery (load)<br>
+
+Deployment - Heroku<br>
+
+Other - Google Analytics, Tableau
+
 ## Future Plans
 
 * Database integration - 
