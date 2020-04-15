@@ -1,5 +1,5 @@
 <template>
-    <div class="module">
+    <div class="module testimonial-list">
         <div class="main-page-container">
             <h2 class="light-blue-text section-title">TESTIMONIALS</h2>
             <HomeTestimonialsItems />
