@@ -1,5 +1,5 @@
 <template>
-    <div class="module">
+    <div class="module contact-module">
         <div class="main-page-container">
             <div class="flex">
                 <div class="left">
