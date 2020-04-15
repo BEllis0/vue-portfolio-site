@@ -45,6 +45,11 @@ export default {
         },
         changeToFalse: function() {
             this.over = false;
+        },
+        track () {
+            this.$gtag.pageview({
+                page_path: '/web-apps',
+            });
         }
     }
 }

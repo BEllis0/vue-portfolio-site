@@ -49,6 +49,11 @@ export default {
         //change overlay to false
         changeToFalse: function() {
             this.over = false;
+        },
+        track () {
+            this.$gtag.pageview({
+                page_path: '/',
+            });
         }
     }
 }
