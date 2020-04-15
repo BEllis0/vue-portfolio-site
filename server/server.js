@@ -12,6 +12,11 @@ const app = express();
 //serve static files
 app.use(express.static(path.join(__dirname, '../client/resume_site/dist')));
 
+//routes everything to html page, troubleshoots refreshing
+app.get(/.*/, (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/resume_site/dist/"));
+});
+
 // ==== middleware
 app.use(cors());
 app.use(morgan('dev'));
