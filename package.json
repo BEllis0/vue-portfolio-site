@@ -4,10 +4,9 @@
   "description": "",
   "author": "",
   "scripts": {
-    "build": "cd client/resume_site && npm install && npm run build",
+    "build": "npm install",
     "test:unit": "vue-cli-service test:unit",
     "artillery-test": "artillery run artillery.yml",
-    "heroku-postinstall": "npm install && npm run build",
     "start": "node server/server.js",
     "start:dev": "nodemon server/server.js"
   },
