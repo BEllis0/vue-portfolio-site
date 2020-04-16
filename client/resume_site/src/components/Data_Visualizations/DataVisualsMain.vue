@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="main">
+        <main class="main">
         <ContactOverlay
             :changeToFalse="this.changeToFalse"
             v-bind:over="this.over" 
         />
         <DataVisualsList  />
-        </div>
+        </main>
     </div>
 </template>
 

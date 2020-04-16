@@ -1,5 +1,5 @@
 <template>
-    <div class="design-item" :id="design.anchor_link">
+    <section class="design-item" :id="design.anchor_link">
         <div>
             <h1>{{ design.name }}</h1>
         </div>
@@ -18,7 +18,7 @@
                 <img class="design-image" v-lazy="image.link" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

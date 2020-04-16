@@ -1,5 +1,5 @@
 <template>
-    <div class="banner">
+    <header class="banner">
         <div class="title-container">
             <h1 class="name">Brandon Ellis</h1>
             <h3 class="public-tag">Web Developer</h3>
@@ -12,7 +12,7 @@
             </div>
         </div>
         <BrandonShamelessPlug />
-    </div>
+    </header>
 </template>
 
 <script>
