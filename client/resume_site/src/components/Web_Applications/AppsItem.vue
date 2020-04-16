@@ -1,5 +1,5 @@
 <template>
-    <div class="app-item" :id="app.anchor_link">
+    <section class="app-item" :id="app.anchor_link">
         <div class="flex">
             <div class="flex">
                 <h1>{{ app.name }}</h1>
@@ -30,7 +30,7 @@
                 <img class="app-image" :src="image.link" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -40,7 +40,7 @@ export default {
     name: "AppsItem",
     props: ["app"],
     components: {
-        // LightBox
+        // LightBox 
     }
 }
 </script>

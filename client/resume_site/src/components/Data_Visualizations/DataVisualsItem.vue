@@ -1,5 +1,5 @@
 <template>
-    <div class="data-visual-item" :id="visual.anchor_link">
+    <section class="data-visual-item" :id="visual.anchor_link">
         <div>
             <h1>{{ visual.name }}</h1>
         </div>
@@ -14,7 +14,7 @@
         <p class="details-section">{{ visual.details }}</p>
         <h3>Data Visualization</h3>
         <img class="data-viz-image" :src="visual.viz.url" :alt="visual.viz.alt" />
-    </div>
+    </section>
 </template>
 
 <script>
