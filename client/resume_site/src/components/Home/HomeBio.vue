@@ -14,7 +14,7 @@
             <div id="about" class="flex">
                 <div class="bio-left">
                     <div class="profile-left">
-                    <img class="headshot-img" alt="Headshot of Brandon Ellis" src="http://www.brandontellis.com/wp-content/uploads/2019/11/26017635.jpeg" />
+                    <img class="headshot-img" alt="Headshot of Brandon Ellis" src="https://res.cloudinary.com/btdigital/image/upload/v1587236681/26017635.jpg" />
                     <SocialIcons />
                     <SocialRepos />
                     </div>
