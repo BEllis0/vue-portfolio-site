@@ -81,5 +81,4 @@ export default {
     .bio-right {
         width: 70%;
     }
-
 </style>
