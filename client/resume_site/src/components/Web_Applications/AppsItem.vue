@@ -49,10 +49,11 @@ export default {
     .image-section {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .app-image {
-        width: 250px;
+        width: 500px;
         height: auto;
         margin: 0px 5px;
     }
@@ -96,6 +97,10 @@ export default {
     @media screen and (max-width: 500px) {
         .website-btn {
             margin-left: 30%;
+        }
+
+        .app-image {
+            width: 100%;
         }
     }
 
