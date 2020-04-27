@@ -103,7 +103,7 @@ export default {
                 github: 'https://github.com/BEllis0/vue-portfolio-site',
                 technologies: [
                     {id: 54222, img_link: javascript},
-                    {id: 10024, img_link: Vue},
+                    {id: 10024, img_link: vue},
                     {id: 52545, img_link: css},
                     {id: 678311234, img_link: node},
                     {id: 2144, img_link: express},
