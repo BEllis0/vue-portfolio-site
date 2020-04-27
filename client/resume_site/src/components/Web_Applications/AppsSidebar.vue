@@ -24,7 +24,9 @@ export default {
     name: "AppsSidebar",
     data: () => ({
         applications: [
+            { id: 1, name: "Current Project: Spotify Library Cleaner & Dashboard", url_link: '', anchor_link: 'spotify' },
             { id: 1, name: "Watchlists.io | Stock App", url_link: 'http://watchlists.io/', anchor_link: 'watchlist' },
+            { id: 1, name: "Portfolio Website", url_link: '', anchor_link: 'portfolio' },
             { id: 2, name: "Amazon Prime Video Clone", url_link: 'https://amazon-review-service.herokuapp.com/', anchor_link: 'amazon' },
             { id: 3, name: "Weather App", url_link: 'https://bellis0.github.io/weather-app/', anchor_link: 'weather' },
             { id: 4, name: "Basic Image Editor", url_link: null, anchor_link: 'image-editor' },
