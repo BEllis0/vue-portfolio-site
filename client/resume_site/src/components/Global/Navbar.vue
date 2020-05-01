@@ -8,7 +8,7 @@
                 <!-- Home -->
                 <router-link to="/"><li class="nav-item">Home</li></router-link>
                 <!-- Resume on Cloudinary -->
-                <a href="https://res.cloudinary.com/btdigital/image/upload/v1588021670/resume/BrandonEllis_Resume.pdf" target="_blank">
+                <a href="https://res.cloudinary.com/btdigital/image/upload/v1588362005/resume/Brandon_Ellis_Resume.pdf" target="_blank">
                     <li class="nav-item">Resume</li>
                 </a>
                 <!-- About section on home page -->
@@ -35,7 +35,7 @@
                 <!-- Home -->
                 <router-link to="/"><li class="nav-item">Home</li></router-link>
                 <!-- Resume on Cloudinary -->
-                <a href="https://res.cloudinary.com/btdigital/image/upload/v1588021670/resume/BrandonEllis_Resume.pdf" target="_blank">
+                <a href="https://res.cloudinary.com/btdigital/image/upload/v1588362005/resume/Brandon_Ellis_Resume.pdf" target="_blank">
                     <li class="nav-item">Resume</li>
                 </a>
                 <!-- About section on home page -->
