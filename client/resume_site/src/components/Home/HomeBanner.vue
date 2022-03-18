@@ -5,7 +5,7 @@
             <h3 class="public-tag">Web Developer</h3>
             <h3 class="developer-tag">const { frontend, backend, fullStack } = require('web_developer')</h3>
             <div>
-                <a target="_blank" href="https://res.cloudinary.com/btdigital/image/upload/v1588362005/resume/Brandon_Ellis_Resume.pdf">
+                <a target="_blank" href="https://res.cloudinary.com/btdigital/image/upload/v1647639233/resume/Brandon_Ellis_Resume.pdf">
                     <button class="resumebtn">Resume</button>
                 </a>
                 <button class="inquirebtn" @click="this.updateContact" >Inquire</button>
