@@ -62,7 +62,7 @@
         </nav>
 
         <div class="footer-copyright-section">
-            <p class="remove-margin">Copyright © 2020 Brandon T. Ellis | BT Digital </p>
+            <p class="remove-margin">Copyright © {{ new Date().getFullYear() }} Brandon T. Ellis | BT Digital </p>
             <p class="remove-margin">Brandonellis.email@gmail.com</p>
             <p class="remove-margin">Built by Brandon Ellis with <a href="https://vuejs.org/" target="_blank">Vue.js</a></p>
         </div>
@@ -82,7 +82,12 @@ export default {
             { title: 'Web Applications', link: '/web-apps' },
             { title: 'Data Visualization', link: '/data-visualization' },
         ]
-    })
+    }),
+    methods: {
+        getYear: function() {
+            return new Date().getFullYear();
+        }
+    }
 }
 </script>
 
