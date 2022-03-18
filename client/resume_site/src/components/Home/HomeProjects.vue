@@ -5,19 +5,19 @@
             <div class="flex project-list">
                 <router-link to="/web-designs" class="project-item blurb-blue" >
                     <div>
-                        <img class="project-icon" src="https://image.flaticon.com/icons/svg/2522/2522213.svg" />
+                        <img class="project-icon" src="https://res.cloudinary.com/btdigital/image/upload/v1647572325/web-design-icon-png-3.png" />
                         <h3 class="project-title">Web Design</h3>
                     </div>
                 </router-link>
                 <router-link to="/web-apps" class="project-item blurb-blue" >
                     <div>
-                        <img class="project-icon" src="https://image.flaticon.com/icons/svg/1781/1781648.svg" />
+                        <img class="project-icon" src="https://res.cloudinary.com/btdigital/image/upload/v1647572538/architecture_icon.png" />
                         <h3 class="project-title">Web Applications</h3>
                     </div>
                 </router-link>
                 <router-link to="/data-visualization" class="project-item blurb-blue" >
                     <div>
-                        <img class="project-icon" src="https://image.flaticon.com/icons/svg/2289/2289207.svg" />
+                        <img class="project-icon" src="https://res.cloudinary.com/btdigital/image/upload/v1647572247/data_viz_icon.png" />
                         <h3 class="project-title">Data Visualizations</h3>
                     </div>
                 </router-link>

@@ -3,7 +3,7 @@
         <div class="testimonial">
             <div class="flex">
                 <div class="testimonial-img-section">
-                    <img alt="Dean Haskell headshot" class="testimonial-img" src="https://media-exp1.licdn.com/dms/image/C4E03AQGIOM_9HlYzGg/profile-displayphoto-shrink_200_200/0?e=1591228800&v=beta&t=g2dA1q1mZjixC58ARKFpq2BqBJQ9b9F9YanKZkJBE8o" />
+                    <img alt="Dean Haskell headshot" class="testimonial-img" src="https://res.cloudinary.com/btdigital/image/upload/v1647570004/dean_haskell.png" />
                 </div>
                 <div class="testimonial-body">
                     <p>My business partner and I contracted with Brandon to build a website for our company, National Retail Concept Partners, LLC. Brandon kept us engaged at every step of the process and helped us determine the look, feel, and functionality that we wanted to achieve with the site. Working remotely did not impact the final product as we had frequent conversations wherein we reviewed the webpage and placed change orders as needed. He was able to pivot quickly when necessary, and was always available to communicate. Aside from his technical skills, he was very professional and easy to work with. Our firm continues to contract with Brandon (BT Digital) on an ongoing basis.</p>
