@@ -6,6 +6,8 @@ import VueLazyload from 'vue-lazyload';
 import 'vue-tableau';
 import VueGtag from 'vue-gtag';
 
+import '../src/assets/global.css';
+
 //route pages
 import HomePage from './components/Home/HomePage.vue';
 import WebAppsPage from './components/Web_Applications/WebAppsPage.vue';
