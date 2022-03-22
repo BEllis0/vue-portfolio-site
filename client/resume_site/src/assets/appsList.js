@@ -4,7 +4,7 @@
 
 import {generateId}  from './generateId.js';
 
-const javascript = 'https://cdn.worldvectorlogo.com/logos/javascript.svg';
+const javascript = 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png';
 const jquery = 'https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png';
 const react = 'https://pngimage.net/wp-content/uploads/2018/06/react-icon-png-7.png';
 const redux = 'https://codedistrict.io/wp-content/uploads/2017/12/reduxLogo.png';
